@@ -1,0 +1,51 @@
+.navbar{
+    height: 70px;
+    width: 100vw;
+    background-color: #BE3144;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pages{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 2rem;
+    height: 100%;
+}
+
+.pages > li > a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin: auto 0;
+    padding: 0 15px;
+    transition: .3s;
+}
+
+.pages > li > a:hover{
+    background-color: #45567D;
+}
+
+@media(max-width: 460px){
+    .navbar{
+        height: 60px;
+        justify-content: center;
+    }
+
+    .pages{
+        margin-right: 0;
+    }
+
+    .pages > li > a {
+        font-size: 1.3;
+    }
+}
