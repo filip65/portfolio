@@ -5,7 +5,7 @@ function Card({info}) {
     const {name, img, link} = info; 
 
     return (
-        <a className="card" href={link} target="_blank" rel="noreferrer">
+        <a className="card project-tile" href={link} target="_blank" rel="noreferrer">
             <img src={`./img/${img}`} alt=""/>
             <p> <span className="code">{`<`}</span> {name} <span className="code">{`/>`}</span> </p>
         </a>

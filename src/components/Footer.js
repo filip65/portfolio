@@ -14,7 +14,7 @@ function Footer() {
                             <p>Facebook</p>
                         </a>
                     </li>
-                    <li className="profile-link">
+                    <li className="profile-link" id="profile-link">
                         <a href="https://www.linkedin.com/in/filip-katu%C5%A1in-09949490/" target="_blank" rel="noreferrer">
                             <AiOutlineLinkedin className="socialIcon" />
                             <p>Linkedin</p>
