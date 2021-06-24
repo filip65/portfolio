@@ -1,27 +1,27 @@
-.card{
-    max-width: 400px;
-    background-color: #303841;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
+.card {
+  max-width: 400px;
+  background-color: #303841;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.card > p{
-    font-size: 1.7rem;
-    padding: 20px;
+.card > p {
+  font-size: 1.7rem;
+  padding: 20px;
 }
 
 .card > img {
-    width: 100%;
+  width: 100%;
 }
 
 .code {
-    font-size: 1.7rem;
-    color: orange;
-    opacity: 0;
-    transition: all .4s;
+  font-size: 1.7rem;
+  color: orange;
+  opacity: 0;
+  transition: all 0.4s;
 }
 
-.card:hover .code{
-    opacity: 1;
+.card:hover .code {
+  opacity: 1;
 }
