@@ -3,8 +3,6 @@ import Card from "./Card";
 import "../css/projects.css";
 import data from "../projects-links";
 
-import Fade from "react-reveal/Fade";
-
 function Projects() {
   return (
     <div id="projects-container">
