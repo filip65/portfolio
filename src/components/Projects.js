@@ -12,11 +12,7 @@ function Projects() {
 
       <div id="projects">
         {data.map((info, index) => {
-          return (
-            // <Fade className="project">
-            <Card info={info} key={index} />
-            // </Fade>
-          );
+          return <Card info={info} key={index} />;
         })}
       </div>
     </div>
