@@ -5,6 +5,11 @@ const data = [
     link: "https://countries-search-api.netlify.app/",
   },
   {
+    name: "Manage landing page",
+    img: "manage-landing-page.png",
+    link: "https://manage-landing-page123.netlify.app/",
+  },
+  {
     name: "Easybank landing page",
     img: "easybank.png",
     link: "https://easybank-katusin.netlify.app/",
