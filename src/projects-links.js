@@ -1,9 +1,15 @@
 const data = [
   {
+    name: "Rock Paper Scissors",
+    img: "rpc.png",
+    link: "https://rock-paper-scissors-katusin.netlify.app/",
+  },
+  {
     name: "Countries search API",
     img: "countries-search.png",
     link: "https://countries-search-api.netlify.app/",
   },
+
   {
     name: "Manage landing page",
     img: "manage-landing-page.png",
