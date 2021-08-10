@@ -9,7 +9,11 @@ const data = [
     img: "countries-search.png",
     link: "https://countries-search-api.netlify.app/",
   },
-
+  {
+    name: "Blog",
+    img: "blog.png",
+    link: "https://thebestblog83.netlify.app/",
+  },
   {
     name: "Manage landing page",
     img: "manage-landing-page.png",
