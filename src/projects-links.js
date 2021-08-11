@@ -1,6 +1,6 @@
 const data = [
   {
-    name: "Rock Paper Scissors",
+    name: "Rock Paper Scissors - PWA",
     img: "rpc.png",
     link: "https://rock-paper-scissors-katusin.netlify.app/",
   },
