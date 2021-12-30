@@ -1,5 +1,10 @@
 const data = [
   {
+    name: "Job listing - server side rendering - mongodb",
+    img: "job-listing.png",
+    link: "https://job-listing-steel.vercel.app/",
+  },
+  {
     name: "Rock Paper Scissors - PWA",
     img: "rpc.png",
     link: "https://rock-paper-scissors-katusin.netlify.app/",
