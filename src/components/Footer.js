@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/footer.css";
+import "../css/footer.scss";
 import {
   AiOutlineLinkedin,
   AiOutlineMail,
@@ -10,36 +10,39 @@ function Footer() {
   return (
     <div id="footer">
       <h2>Feel free to contact me!</h2>
-      <p>Better every day.</p>
+      <p className="quote">"Better every day."</p>
       <ul className="links">
-        <li className="profile-link">
+        <li>
           <a
+            className="profile-link"
             href="https://www.facebook.com/filip.katusin/"
             target="_blank"
             rel="noreferrer"
           >
             <AiOutlineFacebook className="icon" />
-            <p>Facebook</p>
+            Facebook
           </a>
         </li>
-        <li className="profile-link" id="profile-link">
+        <li>
           <a
+            className="profile-link"
             href="https://www.linkedin.com/in/filip-katu%C5%A1in-09949490/"
             target="_blank"
             rel="noreferrer"
           >
             <AiOutlineLinkedin className="icon" />
-            <p>Linkedin</p>
+            Linkedin
           </a>
         </li>
-        <li className="profile-link">
+        <li>
           <a
+            className="profile-link"
             href="mailto:filip.katusin@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
             <AiOutlineMail className="icon" />
-            <p>Email</p>
+            Email
           </a>
         </li>
       </ul>
