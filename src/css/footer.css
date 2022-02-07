@@ -1,78 +1,81 @@
-#footer{
-    height: 70vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #303841;
-    text-align: center;
+#footer {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303841;
+  text-align: center;
 }
 
 #footer > h2 {
-    font-size: 3rem;
-    color: white;
+  font-size: 3rem;
+  color: white;
 }
 
 #footer > p {
-    color: rgb(161, 161, 161);
-    font-size: 1.3rem;
-    padding-top: 20px;
-    font-style: italic;
+  color: rgb(161, 161, 161);
+  font-size: 1.3rem;
+  padding-top: 20px;
+  font-style: italic;
 }
 
-.links{
-    list-style: none;
-    display: flex;
-    margin-top: 50px;
+.links {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
 }
 
-.profile-link{
+.profile-link {
+  display: flex;
+  justify-content: center;
+}
+
+.links > .profile-link > a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.links > .profile-link > a:hover {
+  transform: translatey(5px);
+}
+
+.links > .profile-link > a > p {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+.links .profile-link .icon {
+  font-size: 1.5rem;
+}
+
+.links .profile-link:hover .icon {
+  fill: #be3144;
+}
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .profile-link {
+    padding: 10px 0;
+  }
+
+  .pages > li {
     display: flex;
     justify-content: center;
-}
+  }
 
-.links > .profile-link > a { 
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    transition: transform .3s;
-}
-
-.links > .profile-link > a:hover{
-    transform: translatey(5px);
-}
-
-.links > .profile-link > a > p{
-    font-size: 1.5rem;
-    margin-left: 5px;
-}
-
-.socialIcon{
-    font-size: 1.5rem;
-}
-
-
-@media(max-width: 600px){
-    .links{
-        flex-direction: column;
-    }
-
-    .profile-link{
-        padding: 10px 0;
-    }
-
-    .pages > li{
-        display: flex;
-        justify-content: center;
-    }
-
-    #footer h2{
-        max-width: 70%;
-        font-size: 2.5rem;
-    }
+  #footer h2 {
+    max-width: 70%;
+    font-size: 2.5rem;
+  }
 }
