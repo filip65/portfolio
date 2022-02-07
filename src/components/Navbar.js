@@ -1,11 +1,11 @@
 import React from "react";
-import "../css/navbar.css";
+import "../css/navbar.scss";
 
 import { Link } from "react-scroll";
 
 function Navbar() {
   return (
-    <div className="navbar" id="navbar">
+    <div id="navbar">
       <ul className="pages">
         <li>
           <Link
