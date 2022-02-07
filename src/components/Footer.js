@@ -5,7 +5,6 @@ import {
   AiOutlineMail,
   AiOutlineFacebook,
 } from "react-icons/ai";
-import { FaBeer } from "react-icons/fa";
 
 function Footer() {
   return (

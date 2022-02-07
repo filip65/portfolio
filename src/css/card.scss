@@ -1,0 +1,144 @@
+.card {
+  width: 100%;
+  padding-top: 100%;
+  background-color: #303841;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: all 1.2s ease;
+    perspective: 500px;
+  }
+
+  &:hover &__content {
+    transform: rotateY(180deg);
+  }
+
+  &:hover .front {
+    z-index: -1;
+  }
+
+  &:hover .back {
+    z-index: 1000000000000;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    .img {
+      position: absolute;
+      width: 100%;
+      padding-bottom: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color: #2b2f36;
+
+    &__content {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1rem;
+
+      .list {
+        width: 90%;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        li {
+          margin: 0.4rem;
+          padding: 0.3rem 0.6rem;
+          border-radius: 0.5rem;
+          background-color: #484e577a;
+        }
+      }
+
+      .buttons {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .btn {
+        text-decoration: none;
+        padding: 0.4rem 1.3rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin: 1rem;
+        display: block;
+      }
+
+      .visit {
+        background-color: #be3144;
+        transition: 0.3s all;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .github {
+        background-color: #484e577a;
+        transition: 0.3s all;
+
+        &:hover {
+          background-color: #be3144;
+        }
+      }
+    }
+  }
+
+  .title {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+
+      .code {
+        font-size: 1.7rem;
+        color: orange;
+        opacity: 0;
+        transition: all 0.4s;
+      }
+    }
+  }
+
+  &:hover p .code {
+    opacity: 1;
+  }
+}

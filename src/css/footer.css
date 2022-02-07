@@ -1,5 +1,5 @@
 #footer {
-  height: 70vh;
+  height: 50vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -77,5 +77,17 @@
   #footer h2 {
     max-width: 70%;
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #footer {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #footer {
+    height: 30vh;
   }
 }
